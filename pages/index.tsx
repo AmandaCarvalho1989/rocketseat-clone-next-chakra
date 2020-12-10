@@ -74,6 +74,7 @@ export default function Home() {
               _hover={{ color: 'purple.500' }} 
               color="purple.600" 
               fontWeight="bold"
+              href='./register'
             >
               Registre-se
             </Link>
