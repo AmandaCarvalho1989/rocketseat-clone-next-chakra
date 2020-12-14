@@ -1,9 +1,10 @@
 import Head from 'next/head'
-import { Flex, Grid, Text, Link } from '@chakra-ui/core'
+import { Flex, Grid, Text, Link, Stack } from '@chakra-ui/core'
 
 import Input from '~/components/Input'
 import Button from '~/components/Button'
 import Divider from '~/components/Divider'
+import { MdLock, MdMail } from 'react-icons/md'
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         <title>Rocketseat | Login</title>
       </Head>
 
-      <Grid 
+      <Grid
         as="main"
         height="100vh"
         templateColumns="1fr 480px 480px 1fr"
@@ -22,7 +23,7 @@ export default function Home() {
           '. logo form .'
           '. .    .    .'
         "
-        justifyContent="center" 
+        justifyContent="center"
         alignItems="center"
       >
         <Flex gridArea="logo" as="aside" flexDir="column" alignItems="flex-start">
@@ -33,33 +34,36 @@ export default function Home() {
           </Text>
         </Flex>
 
-        <Flex 
-          gridArea="form" 
-          height="100%" 
+        <Flex
+          gridArea="form"
+          height="100%"
           backgroundColor="gray.700"
           borderRadius="md"
           flexDirection="column"
           alignItems="stretch"
           padding={16}
         >
-          <Input
-            name="email"
-            placeholder="E-mail"
-          />
+          <Stack spacing={3}>
+            <Input
+              name="email"
+              placeholder="E-mail"
+              icon={<MdMail size={20} />}
+            />
 
-          <Input
-            name="password"
-            placeholder="Senha"
+            <Input
+              name="password"
+              placeholder="Senha"
+              icon={<MdLock size={20} />}
+            />
+          </Stack>
+          <Link
+            alignSelf="flex-start"
             marginTop={2}
-          />
-
-          <Link 
-            alignSelf="flex-start" 
-            marginTop={2} 
-            fontSize="sm" 
-            _hover={{ color: 'purple.500' }} 
-            color="purple.600" 
+            fontSize="sm"
+            _hover={{ color: 'purple.500' }}
+            color="purple.600"
             fontWeight="bold"
+            href='/forgot-password'
           >
             Esqueci minha senha
           </Link>
@@ -70,9 +74,9 @@ export default function Home() {
 
           <Text textAlign="center" fontSize="sm" color="gray.300" marginTop={6}>
             Não tem uma conta? {' '}
-            <Link 
-              _hover={{ color: 'purple.500' }} 
-              color="purple.600" 
+            <Link
+              _hover={{ color: 'purple.500' }}
+              color="purple.600"
               fontWeight="bold"
               href='./register'
             >
@@ -84,11 +88,11 @@ export default function Home() {
 
           <Flex alignItems="center">
             <Text fontSize="sm">Ou entre com</Text>
-            <Button 
+            <Button
               backgroundColor="gray.600"
-              flex="1" 
+              flex="1"
               marginLeft={6}
-              _hover={{ backgroundColor: "purple.500" }} 
+              _hover={{ backgroundColor: "purple.500" }}
             >
               GITHUB
             </Button>

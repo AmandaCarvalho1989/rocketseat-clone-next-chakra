@@ -36,6 +36,7 @@ const customTheme: DefaultTheme = {
       800: '#121214'
     },
   }, 
+  
 };
 
 export default customTheme;
