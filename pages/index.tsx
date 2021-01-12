@@ -94,7 +94,17 @@ export default function Home() {
               marginLeft={6}
               _hover={{ backgroundColor: "purple.500" }}
             >
+              <Link
+            // alignSelf="flex-start"
+            // marginTop={2}
+            // fontSize="sm"
+            // _hover={{ color: 'purple.500' }}
+            // color="purple.600"
+            // fontWeight="bold"
+            href='/news-letter'
+          >
               GITHUB
+          </Link>
             </Button>
           </Flex>
         </Flex>

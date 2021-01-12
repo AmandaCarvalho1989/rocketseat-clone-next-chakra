@@ -2,15 +2,20 @@ import { Flex, Text, Image } from '@chakra-ui/core'
 
 import Input from '~/components/Input'
 import Button from '~/components/Button'
-import { useState } from 'react'
+import { FormEvent, useState } from 'react'
+import axios from 'axios'
+
 
 export default function NewsLetter() {
 
     const [email, setEmail] = useState('')
 
-    function handleSignUpToNewsletter() {
-    
+    function handleSignUpToNewsletter(event: FormEvent) {
+        event.preventDefault()
+
+        axios.post('/api/subscribe', { email })
     }
+
     return (
         <Flex
             as="main"
