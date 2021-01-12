@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import { Flex, Grid, Text, Link, Stack } from '@chakra-ui/core'
 
-import Input from '~/components/Input'
-import Button from '~/components/Button'
-import Divider from '~/components/Divider'
+import Input from '../components/Input'
+import Button from '../components/Button'
+import Divider from '../components/Divider'
 import { MdLock, MdMail } from 'react-icons/md'
+
+const logo = ''
 
 export default function Home() {
   return (
@@ -27,7 +29,7 @@ export default function Home() {
         alignItems="center"
       >
         <Flex gridArea="logo" as="aside" flexDir="column" alignItems="flex-start">
-          <img src="/rocketseat.svg" alt="Rocketseat" />
+          <img src={logo} alt="Rocketseat" />
 
           <Text fontSize="6xl" fontWeight="bold" lineHeight="shorter" marginTop={16}>
             Faça seu login <br /> na plataforma
@@ -95,15 +97,15 @@ export default function Home() {
               _hover={{ backgroundColor: "purple.500" }}
             >
               <Link
-            // alignSelf="flex-start"
-            // marginTop={2}
-            // fontSize="sm"
-            // _hover={{ color: 'purple.500' }}
-            // color="purple.600"
-            // fontWeight="bold"
-            href='/news-letter'
-          >
-              GITHUB
+                // alignSelf="flex-start"
+                // marginTop={2}
+                // fontSize="sm"
+                // _hover={{ color: 'purple.500' }}
+                // color="purple.600"
+                // fontWeight="bold"
+                href='/news-letter'
+              >
+                GITHUB
           </Link>
             </Button>
           </Flex>

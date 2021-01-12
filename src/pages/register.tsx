@@ -4,8 +4,8 @@ import { Flex, Grid, Text, Link, Box, Tabs, TabList, Tab, TabPanels, TabPanel, S
 // import {FiArrowLeft} from 'react-icons/fi'
 
 // import {ArrowBackIcon} from '@chakra-ui/icons'
-import Input from '~/components/Input'
-import Button from '~/components/Button'
+import Input from '~/src/components/Input'
+import Button from '~/src/components/Button'
 import { MdDescription, MdKeyboardBackspace, MdLock, MdMail, MdPerson, MdStore } from 'react-icons/md'
 
 export default function Home() {

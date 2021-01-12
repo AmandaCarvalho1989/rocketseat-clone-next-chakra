@@ -1,10 +1,9 @@
 import { Flex, Text, Image } from '@chakra-ui/core'
 
-import Input from '~/components/Input'
-import Button from '~/components/Button'
+import Input from '~/src/components/Input'
+import Button from '~/src/components/Button'
 import { FormEvent, useState } from 'react'
 import axios from 'axios'
-
 
 export default function NewsLetter() {
 
@@ -15,6 +14,7 @@ export default function NewsLetter() {
 
         axios.post('/api/subscribe', { email })
     }
+    ``
 
     return (
         <Flex

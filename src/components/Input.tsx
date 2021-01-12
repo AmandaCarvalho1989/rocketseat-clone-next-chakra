@@ -36,6 +36,7 @@ const Input: React.ForwardRefRenderFunction<HTMLInputElement, InputProps> = ({ n
           children={icon}
           width='50px'
           height='50px'
+          data-testid='input-icon'
           color={!isFocused ? '#28272C' : '#6b46c1'}
         />
       }
