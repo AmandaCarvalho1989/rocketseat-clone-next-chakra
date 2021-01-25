@@ -63,3 +63,6 @@ export default function NewsLetter() {
         </Flex>
     )
 }
+
+
+//MONGODB_URI=mongodb+srv://youtube:youtube@cluster0.yufjn.mongodb.net/news?retryWrites=true&w=majority
