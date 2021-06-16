@@ -5,8 +5,7 @@ import Input from '../components/Input'
 import Button from '../components/Button'
 import Divider from '../components/Divider'
 import { MdLock, MdMail } from 'react-icons/md'
-
-const logo = ''
+import logo from '../assets/rocketseat-logo.png'
 
 export default function Home() {
   return (
