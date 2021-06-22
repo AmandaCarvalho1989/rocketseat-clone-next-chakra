@@ -1,20 +1,33 @@
-# RocketSeat UI Clone
+<h1 align="center">
+    <img src="https://greenvolt.com.br/wp-content/uploads/2018/05/ef3-placeholder-image.jpg" />
+</h1>
+
+## 💻 Project 
 
 Este projeto foi realizado com objetivo de estudo.
 <br />
 É um clone de algumas páginas da plataforma da RocketSeat<br />
 
-### Preview
 
-<h1 align="center">
-  <img alt="RocketSeat" title="#RocketSeat" src="./src/assets/gofinances-video.gif" />
-</h1>
+##  🧬 Techologies 
 
-### Recursos 
-- [x] ReactJS, NextJS, Typescript, ChakraUI e styled-components
+- [Chakra](https://chakra-ui.com/)
+- [NextJS](https://nextjs.org/)
+- [ReactJS](https://pt-br.reactjs.org/)
+- [Styles-Components](https://styled-components.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-### Como acessar?
-- Abra a pasta do projeto no VSCode
-- Abra o terminal e digite `npm install` ou `yarn `para instalar as dependências do projeto
-- Após a instalação, ainda no terminal digite `npm start` ou `yarn dev`para iniciar o projeto
-- Acesse o endereço gerado no Browser 🚀
+
+## 🚀 Getting Started 
+
+```bash
+# Install the dependencies
+$ npm install or yarn 
+
+# Start the project 
+$ npm start or yarn dev
+ ```
+
+## 📝 License  
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
