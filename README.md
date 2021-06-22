@@ -20,6 +20,12 @@ Este projeto foi realizado com objetivo de estudo.
 
 ## 🚀 Getting Started 
 
+Clone the project and access the folder.
+```bash
+$ git clone https://github.com/amandacarvalho1989/jobs-calc.git && cd RocketSeat
+```
+
+Follow the steps below
 ```bash
 # Install the dependencies
 $ npm install or yarn 
